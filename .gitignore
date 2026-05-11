@@ -1,0 +1,42 @@
+# Dependències
+node_modules/
+.pnp
+.pnp.js
+
+# Build
+dist/
+dist-ssr/
+build/
+
+# Variables d'entorn (mai pujar els valors reals!)
+.env
+.env.local
+.env.development.local
+.env.test.local
+.env.production.local
+# Sí que cal pujar .env.example (sense valors secrets)
+!.env.example
+
+# Logs
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+bun-debug.log*
+
+# Editor
+.vscode/*
+!.vscode/extensions.json
+.idea/
+*.suo
+*.ntvs*
+*.njsproj
+*.sln
+*.sw?
+
+# Sistema operatiu
+.DS_Store
+Thumbs.db
+
+# Tests
+coverage/

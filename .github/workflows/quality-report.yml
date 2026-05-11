@@ -1,0 +1,86 @@
+name: 📊 Informe de Qualitat del Projecte
+
+on:
+  push:
+    branches: [main, master]
+  pull_request:
+    branches: [main, master]
+
+permissions:
+  contents: read
+  pull-requests: write
+  issues: write
+
+jobs:
+  quality-report:
+    name: Comprovació de Requisits
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: 📥 Checkout del repositori
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 0  # Necessari per comptar commits per autor
+
+      - name: 🟢 Configurar Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: '20'
+          cache: 'npm'
+
+      - name: 📦 Instal·lar dependencies
+        run: npm install
+
+      - name: 🏗️ Build de producció
+        run: npm run build
+
+      - name: 🔧 Donar permisos d'execució als scripts
+        run: chmod +x scripts/checks/*.sh
+
+      - name: 📁 Comprovar estructura de carpetes
+        run: bash scripts/checks/check_structure.sh
+
+      - name: ⚛️ Comprovar components React
+        run: bash scripts/checks/check_components.sh
+
+      - name: 🌐 Comprovar crides a API
+        run: bash scripts/checks/check_api.sh
+
+      - name: 🚀 Comprovar README i URL de Vercel
+        run: bash scripts/checks/check_readme.sh
+
+      - name: 📝 Comprovar autoavaluació
+        run: bash scripts/checks/check_autoavaluacio.sh
+
+      - name: 👥 Estadístiques de commits per membre
+        run: |
+          echo "## Commits per membre del grup"
+          echo ""
+          git log --format="%ae" | sort | uniq -c | sort -rn | while read count email; do
+            echo "  $count commits — $email"
+          done
+          echo ""
+          echo "Total commits: $(git rev-list --count HEAD)"
+          echo ""
+          echo "Membres amb commits:"
+          UNIQUE_AUTHORS=$(git log --format="%ae" | sort -u | wc -l)
+          echo "  $UNIQUE_AUTHORS autor/s únics"
+          if [ "$UNIQUE_AUTHORS" -lt 2 ]; then
+            echo "⚠️  AVÍS: Només hi ha commits d'1 autor. Tots els membres han de contribuir!"
+          fi
+
+      - name: 📊 Generar informe resum
+        if: always()
+        run: |
+          echo ""
+          echo "=================================================="
+          echo "         INFORME DE QUALITAT DEL PROJECTE"
+          echo "=================================================="
+          echo ""
+          echo "Repositori : ${{ github.repository }}"
+          echo "Commit     : ${{ github.sha }}"
+          echo "Branca     : ${{ github.ref_name }}"
+          echo "Data       : $(date '+%Y-%m-%d %H:%M:%S UTC')"
+          echo ""
+          echo "Reviseu els passos anteriors per al detall de cada comprovació."
+          echo "=================================================="

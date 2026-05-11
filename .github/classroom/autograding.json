@@ -1,0 +1,74 @@
+{
+  "tests": [
+    {
+      "name": "📦 1. Instal·lació de dependencies",
+      "setup": "",
+      "run": "npm install",
+      "input": "",
+      "output": "",
+      "comparison": "included",
+      "timeout": 120,
+      "points": 5
+    },
+    {
+      "name": "🏗️ 2. Build de producció sense errors",
+      "setup": "npm install",
+      "run": "npm run build",
+      "input": "",
+      "output": "",
+      "comparison": "included",
+      "timeout": 120,
+      "points": 20
+    },
+    {
+      "name": "📁 3. Estructura de carpetes correcta (components, pages, hooks)",
+      "setup": "chmod +x scripts/checks/check_structure.sh",
+      "run": "bash scripts/checks/check_structure.sh",
+      "input": "",
+      "output": "OK",
+      "comparison": "included",
+      "timeout": 10,
+      "points": 10
+    },
+    {
+      "name": "⚛️ 4. Mínim 3 components JSX/TSX a src/components/",
+      "setup": "chmod +x scripts/checks/check_components.sh",
+      "run": "bash scripts/checks/check_components.sh",
+      "input": "",
+      "output": "OK",
+      "comparison": "included",
+      "timeout": 10,
+      "points": 10
+    },
+    {
+      "name": "🌐 6. Crida a API externa (fetch)",
+      "setup": "chmod +x scripts/checks/check_api.sh",
+      "run": "bash scripts/checks/check_api.sh",
+      "input": "",
+      "output": "OK",
+      "comparison": "included",
+      "timeout": 10,
+      "points": 10
+    },
+    {
+      "name": "🚀 7. URL de Vercel documentada al README",
+      "setup": "chmod +x scripts/checks/check_readme.sh",
+      "run": "bash scripts/checks/check_readme.sh",
+      "input": "",
+      "output": "OK",
+      "comparison": "included",
+      "timeout": 10,
+      "points": 15
+    },
+    {
+      "name": "📝 8. Autoavaluació completada (docs/autoavaluacio.md)",
+      "setup": "chmod +x scripts/checks/check_autoavaluacio.sh",
+      "run": "bash scripts/checks/check_autoavaluacio.sh",
+      "input": "",
+      "output": "OK",
+      "comparison": "included",
+      "timeout": 10,
+      "points": 10
+    }
+  ]
+}
