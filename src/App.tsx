@@ -40,7 +40,7 @@ function App() {
       <header className="encabezado">
         <img src={pokeball} alt="Logo de la web de una pokeball" width={40} />
         <button className="boton-titulo">
-          <a className="titulo" href="/">
+          <a className="titulo" href="./App.tsx">
             PokeWeb
           </a>
         </button>
@@ -48,7 +48,7 @@ function App() {
         <nav className="enlaces">
           <ul>
             <li className="lista">
-              <a className="enlace" href="/details">
+              <a className="enlace" href="./pokemonDetails.tsx">
                 Detalles
               </a>
             </li>
