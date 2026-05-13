@@ -32,7 +32,7 @@ https://free-react.vercel.app/
 | **CSS / CSS Modules** | Estils | ✅ |
 
 
-## 📁 Estructura de Carpetes Recomanada
+## 📁 Estructura de Carpetes
 
 ```
 free-react-app-lossuperninis/
