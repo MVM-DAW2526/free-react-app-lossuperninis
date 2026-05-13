@@ -36,15 +36,78 @@ body {
   flex: 1;
 }
 
-.lista {
-  list-style: none;
-}
-
 .enlace {
   text-decoration: none;
   color: white;
   font-size: 30px;
+  margin-left: -135px;
+  cursor: pointer;
 }
+
+
+.enlaces a:hover {
+    transform: scale(1.08);
+    border-bottom: 4px solid white;
+    padding-bottom: 5px;
+    transition: 0.2s;
+
+}
+.lista {
+  list-style: none;
+}
+
+.titulo-abajo {
+    display: flex;
+    justify-content: center;
+    margin-top: -20px;
+    margin-bottom: -45px;
+    font-size: 27px;
+    color: red;
+}
+
+.info-buscador {
+    display: flex;
+    justify-content: center;
+    font-size: 23px;
+    color: red;
+    margin-bottom: 8px;
+}
+
+.contenedor-buscador {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: white;
+    -webkit-text-stroke: 0;
+    border: 3px solid black;
+    border-radius: 100px;
+    width: 610px;
+    height: 20px;
+    padding: 13px 25px;
+    margin-left: auto;
+    margin-right: auto;
+
+}
+
+.buscador {
+    border: none;
+    outline: none;
+    background: none;
+    font-size: 25px;
+}
+
+.icono-lupa {
+    width: 35px;
+    height: auto;
+    margin-right: 15px;
+}
+
+.separador {
+    border: 2px solid black;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
 
 .boton-user {
   border: none;
@@ -53,7 +116,7 @@ body {
 
 .pokedex-grid {
     display: grid; 
-    grid-template-columns: repeat(6, 1fr);    
+    grid-template-columns: repeat(5, 1fr);    
     gap: 20px;
     padding: 20px;
     font-size: 20px;
@@ -61,10 +124,34 @@ body {
     
 }
 
+.seccion-filtrado {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 2px solid rgb(173, 173, 173);
+    border-radius: 30px;
+    margin-left: 700px;
+    margin-right: 750px;
+    width: 300px;
+    -webkit-text-stroke: 1px black;
+    font-size: 30px;
+    margin-top: 10px;
+}
+
 .pokemon-card {
     border: 2px solid black;
     border-radius: 10px;
     text-align: center;
     padding: 10px;
-    background-color: gray;
+    background-color: rgb(176, 163, 163);
+}
+
+.pokemon-card img {
+  width: 150px;
+}
+
+.pokemon-card:hover {
+  transition: all 0.3s ease-in-out; 
+  transform: scale(1.05);
+  cursor: pointer;
 }
