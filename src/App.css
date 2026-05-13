@@ -157,6 +157,21 @@ body {
 }
 
 
+.pokemon-types-container {
+  display: flex;
+  justify-content: center;
+  gap: 8px; 
+  margin-top: 10px;
+}
+
+.badge {
+  padding: 4px 12px;
+  border-radius: 15px;
+  font-size: 0.8rem;
+  color: white;
+  font-weight: bold;
+}
+
 /*Colores fondo pokemons*/
 
 .grass {
