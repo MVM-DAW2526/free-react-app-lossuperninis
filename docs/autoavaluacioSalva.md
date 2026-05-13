@@ -42,13 +42,13 @@ Descriu detalladament **què has fet tu** durant la segona sessió:
 **La meva contribució:**
 
 ```
-netejar el html i css per poder escriure, i borrar fotos que no serveixen
+netejar el html i css per poder escriure, i borrar fotos que no serveixen, i canviar el fons de les targetes segons el tipus
 ```
 
 **Commits de la Sessió 2 que identifiquen la meva feina:**
 
 - `commit: html, css y imagenes limpiadas`
-
+- `fondo color segun tipo pokemon añadidou` 
 ---
 
 ## 2. Valoració de les Competències Tècniques
@@ -57,12 +57,12 @@ Puntua't del 1 al 10 i justifica cada puntuació:
 
 | Competència | Nota (1-10) | Justificació |
 |-------------|-------------|--------------|
-| Conec i entenc el codi que he escrit |0|No he escrit codi|
+| Conec i entenc el codi que he escrit |7|Entenc el codi que he escrit majoritariament|
 | He usat correctament els hooks de React |0| |
-| El meu codi és net i llegible |0| |
+| El meu codi és net i llegible |7|S’entén bastant be |
 | He gestionat bé els errors i casos límit |0| |
-| He contribuït al disseny i l'estil |0| |
-| He usat Git correctament (commits, branches) |5| algo he fet|
+| He contribuït al disseny i l'estil |5| La majoria ha sigut verbalment als companys de com quedarien millor els colors o coses aixi, pero en codi nomes es el fons de les targetes|
+| He usat Git correctament (commits, branches) |7| he anat fent commits dels canvis que anava fent, i vaig fer una branca meva per fer canvis mes facilment i vaig comentar al grup d’utilitzar branques pero tots vam acabar treballant al main|
 
 ---
 
@@ -71,19 +71,19 @@ Puntua't del 1 al 10 i justifica cada puntuació:
 **Què ha funcionat bé al grup?**
 
 ```
-la esperança
+la esperança i comunicació
 ```
 
 **Què milloraries de la dinàmica del grup?**
 
 ```
-la coordinació
+la coordinació, i distribució de temps/tasques 
 ```
 
 **Com valoraries la contribució de cadascun dels teus companys?** (breu i constructiu)
 
-- **Company 1 (nom):** Ruben Saturnino, 0
-- **Company 2 (nom):** Francisco Fernandez, 0
+- **Company 1 (nom):** Ruben Saturnino, 7
+- **Company 2 (nom):** Francisco Fernandez, 7
 
 ---
 
@@ -98,20 +98,20 @@ Ningun
 **Quin ha estat el repte tècnic més gran que has superat?**
 
 ```
-Inicialitzar el git
+Com canviar el fons de les targetes
 ```
 
 **Qué faries diferent si tornessis a començar?**
 
 ```
-No fer els deures d'anglès i fer abans la part html de la web
+No fer els deures d'anglès i apart fer abans la part html de la web i repartir millor les tasques assignades
 ```
 
 ---
 
 ## 5. Nota que et poses a tu mateix
 
-**Nota global (0-10):** 1
+**Nota global (0-10):** 5
 
 **Justificació:**
 
