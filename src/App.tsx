@@ -1,8 +1,19 @@
-import './App.css'
+import { useEffect, useState } from 'react';
+import { fetchPokemonList } from './services/pokemonServices'; 
+import type { Pokemon } from './services/pokemon';           
+import './App.css';
 import pokeball from "./assets/images/pokeball.png"
 import icon from "./assets/images/icon.webp"
 
 function App() {
+  const [pokemons, setPokemons] = useState<Pokemon[]>([]);
+
+  useEffect(() => {
+    fetchPokemonList(1025).then((data) => {
+      setPokemons(data);
+    });
+  }, []);
+  
   return (
     <div>
       <header className="encabezado">
@@ -29,8 +40,17 @@ function App() {
         <img src={icon} alt="Imagen del logo del usuario" width={75} />
         </button>
       </header>
+    <main className="pokedex-grid">
+        {pokemons.map((pokemon) => (
+          <div key={pokemon.id} className="pokemon-card">
+            <img src={pokemon.sprites.front_default} alt={pokemon.name} />
+            <h3> #{pokemon.id} | {pokemon.name}</h3>
+            <p>Tipo: {pokemon.types.map((type) => type.type.name).join(', ')}</p>
+          </div>
+        ))}
+      </main>
     </div>
-  )
+  );
 }
 
 export default App

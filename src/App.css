@@ -6,6 +6,12 @@
   padding: 10px 20px;
 }
 
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: #efefef;
+}
+
 .logo {
   margin-left: 20px;
 }
@@ -43,4 +49,22 @@
 .boton-user {
   border: none;
   background-color: red;
+}
+
+.pokedex-grid {
+    display: grid; 
+    grid-template-columns: repeat(6, 1fr);    
+    gap: 20px;
+    padding: 20px;
+    font-size: 20px;
+    font-family: Arial, sans-serif;
+    
+}
+
+.pokemon-card {
+    border: 2px solid black;
+    border-radius: 10px;
+    text-align: center;
+    padding: 10px;
+    background-color: gray;
 }
