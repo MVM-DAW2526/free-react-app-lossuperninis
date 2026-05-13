@@ -1,6 +1,8 @@
 [![Review Assignment Due Date](https://classroom.github.com/assets/deadline-readme-button-22041afd0340ce965d47ae6ef1cefeee28c7c493a6346c4f15d667ab976d596c.svg)](https://classroom.github.com/a/-MytgoAU)
+
 # 🚀 Projecte Avaluable: Aplicació React
 
+## Link Projecte: https://free-react.vercel.app/
 ## 📋 Descripció del Projecte
 
 Heu de dissenyar i implementar una **aplicació web completa amb React**, desplegada a producció, utilitzant les eines professionals del sector.
