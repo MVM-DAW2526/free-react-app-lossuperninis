@@ -48,9 +48,6 @@ function App() {
         <nav className="enlaces">
           <ul>
             <li className="lista">
-              <a className="enlace" href="./pokemonDetails.tsx">
-                Detalles
-              </a>
             </li>
           </ul>
         </nav>
