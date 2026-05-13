@@ -1,0 +1,54 @@
+.encabezado {
+    background-color: red;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.logo {
+    margin-left: 20px;
+    display: flex;
+}
+
+.boton-titulo {
+    color: white;
+    display: flex;
+    margin-left: 20px;
+    background-color: red;
+    border: none;
+    font-size: 30px;
+}
+
+.titulo {
+    text-decoration: none;
+    color: white;
+}
+
+.enlaces {
+    display: flex;
+    width: 100%;
+    justify-content: center;
+}
+
+.lista {
+    display: flex;
+}
+
+.enlace {
+    display: flex;
+    text-decoration: none;
+    color: white;
+    font-size: 30px;
+    margin-left: -135px;
+}
+
+.logo-user {
+    display: flex;
+    justify-content: end;
+    margin-right: 5px;
+}
+
+.boton-user {
+    border: none;
+    background-color: red;
+}
