@@ -5,7 +5,7 @@ import './App.css';
 import pokeball from "./assets/images/pokeball.png";
 import icon from "./assets/images/icon.webp";
 import lupa from "./assets/images/lupa.png";
-import { Header } from './components/header';
+import { Header } from './components/Header';
 import { SearchBar } from './components/SearchBar';
 import { PokemonGrid } from './components/PokemonGrid';
 
