@@ -1,6 +1,6 @@
 import { useEffect, useState } from 'react';
 import { fetchPokemonList } from './services/pokemonServices'; 
-import type { Pokemon } from './services/pokemon';           
+import type { Pokemon } from './services/pokemon';          
 import './App.css';
 import pokeball from "./assets/images/pokeball.png"
 import icon from "./assets/images/icon.webp"
@@ -9,11 +9,20 @@ import lupa from "./assets/images/lupa.png"
 function App() {
   const [pokemons, setPokemons] = useState<Pokemon[]>([]);
 
-  useEffect(() => {
+  const [searchTerm, setSearchTerm] = useState('');
+  
+    useEffect(() => {
     fetchPokemonList(20).then((data) => {
       setPokemons(data);
     });
   }, []);
+
+const filteredPokemons = pokemons.filter((pokemon) => 
+    pokemon.name.toLowerCase().includes(searchTerm.toLowerCase()) ||
+    pokemon.id.toString().includes(searchTerm) // También permite buscar por ID
+  );
+
+
     const typeColors: { [key: string]: string } = {
     grass: 'grass',
     fire: 'fire',
@@ -34,8 +43,10 @@ function App() {
     ghost: 'ghost',
     steel: 'steel',
   };
+
+
+
   return (
-    <body>
     <div>
       <header className="encabezado">
         <img src={pokeball} alt="Logo de la web de una pokeball" width={40} />
@@ -67,7 +78,15 @@ function App() {
           </div>
           <div className="contenedor-buscador">
         <img src={lupa} alt="Lupa buscador" width={40} height={40} className="icono-lupa"/>
-        <input className="buscador" type="text" placeholder="Ej: Bulbasur" width={600} height={50}/>
+        <input 
+        className="buscador" 
+        type="text" 
+        placeholder="Ej: Bulbasur" 
+        width={600} 
+        height={50}
+        value={searchTerm}
+        onChange={(e) => setSearchTerm(e.target.value)}
+        />
           </div>
         </div>
       </section>
@@ -81,17 +100,16 @@ function App() {
         <hr className="separador"/>
       </section>
     <section className="pokedex-grid">
-        {pokemons.map((pokemon) => (
-          <div key={pokemon.id} className={`pokemon-card ${ typeColors[pokemon.types[0].type.name] }`}>
+        {filteredPokemons.map((pokemon) => (
+          <div key={pokemon.id} className={`pokemon-card ${typeColors[pokemon.types[0].type.name]}`}>
             <img src={pokemon.sprites.front_default} alt={pokemon.name} />
             <h3> #{pokemon.id} | {pokemon.name}</h3>
-            <p>Tipo: {pokemon.types.map((type) => type.type.name).join(', ')}</p>
-          </div>
+              <p>Tipo: {pokemon.types.map((t) => t.type.name).join(', ')}</p>
+            </div>
         ))}
         </section>
       </main>
     </div>
-    </body>
   );
 }
 
