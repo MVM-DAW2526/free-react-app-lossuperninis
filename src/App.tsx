@@ -14,7 +14,26 @@ function App() {
       setPokemons(data);
     });
   }, []);
-  
+    const typeColors: { [key: string]: string } = {
+    grass: 'grass',
+    fire: 'fire',
+    water: 'water',
+    electric: 'electric',
+    psychic: 'psychic',
+    ice: 'ice',
+    dragon: 'dragon',
+    dark: 'dark',
+    fairy: 'fairy',
+    normal: 'normal',
+    fighting: 'fighting',
+    flying: 'flying',
+    poison: 'poison',
+    ground: 'ground',
+    rock: 'rock',
+    bug: 'bug',
+    ghost: 'ghost',
+    steel: 'steel',
+  };
   return (
     <body>
     <div>
@@ -66,7 +85,7 @@ function App() {
       </section>
     <section className="pokedex-grid">
         {pokemons.map((pokemon) => (
-          <div key={pokemon.id} className="pokemon-card">
+          <div key={pokemon.id} className={`pokemon-card ${ typeColors[pokemon.types[0].type.name] }`}>
             <img src={pokemon.sprites.front_default} alt={pokemon.name} />
             <h3> #{pokemon.id} | {pokemon.name}</h3>
             <p>Tipo: {pokemon.types.map((type) => type.type.name).join(', ')}</p>
