@@ -49,14 +49,14 @@ function App() {
           />
           <div id="container-generations">
             <button className="buttonKanto" onClick={() => changeGeneration(0, 151)}>Kanto</button>
-            <button className="buttonJohto" onClick={() => changeGeneration(152, 251)}>Johto</button>
-            <button className="buttonHoenn" onClick={() => changeGeneration(252, 386)}>Hoenn</button>
-            <button className="buttonSinnoh" onClick={() => changeGeneration(387, 493)}>Sinnoh</button>
-            <button className="buttonUnova" onClick={() => changeGeneration(494, 649)}>Unova</button>
-            <button className="buttonKalos" onClick={() => changeGeneration(650, 721)}>Kalos</button>
-            <button className="buttonAlola" onClick={() => changeGeneration(722, 809)}>Alola</button>
-            <button className="buttonGalar" onClick={() => changeGeneration(810, 905)}>Galar</button>
-            <button className="buttonPaldea" onClick={() => changeGeneration(906, 1025)}>Paldea</button>
+            <button className="buttonJohto" onClick={() => changeGeneration(151, 251)}>Johto</button>
+            <button className="buttonHoenn" onClick={() => changeGeneration(251, 386)}>Hoenn</button>
+            <button className="buttonSinnoh" onClick={() => changeGeneration(386, 493)}>Sinnoh</button>
+            <button className="buttonUnova" onClick={() => changeGeneration(493, 649)}>Unova</button>
+            <button className="buttonKalos" onClick={() => changeGeneration(649, 721)}>Kalos</button>
+            <button className="buttonAlola" onClick={() => changeGeneration(721, 809)}>Alola</button>
+            <button className="buttonGalar" onClick={() => changeGeneration(809, 905)}>Galar</button>
+            <button className="buttonPaldea" onClick={() => changeGeneration(905, 1025)}>Paldea</button>
           </div>
           <div className='container-filter'>
             <div className="section-filter">

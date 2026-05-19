@@ -299,6 +299,10 @@ body {
   gap: 10px;
 }
 
+#container-generations > button:hover{
+  cursor: pointer;
+}
+
 .buttonKanto {
   width: 100px;
   height: 25px;
