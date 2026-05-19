@@ -41,6 +41,17 @@ function App() {
             placeholder="Ej: Bulbasaur" 
             icon={lupa} 
           />
+          <div id="container-generations">
+            <button className="buttonKanto">Kanto</button>
+            <button className="buttonJohto">Johto</button>
+            <button className="buttonHoenn">Hoenn</button>
+            <button className="buttonSinnoh">Sinnoh</button>
+            <button className="buttonUnova">Unova</button>
+            <button className="buttonKalos">Kalos</button>
+            <button className="buttonAlola">Alola</button>
+            <button className="buttonGalar">Galar</button>
+            <button className="buttonPaldea">Paldea</button>
+          </div>
           <div className='container-filter'>
             <div className="section-filter">
               <div className="filter-dropdown">
