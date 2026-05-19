@@ -1,4 +1,6 @@
 .encabezado {
+  display: flex;
+  align-items: center;
   background-color: red;
   display: flex;
   justify-content: center;
@@ -240,4 +242,28 @@ body {
 
 .steel {
   background-color: #8282af;
+}
+
+.container-filter {
+  display: flex;
+  justify-content: center;
+}
+
+.section-filter {
+  margin-top: 20px;
+  display: flex;
+  justify-content: center;
+  border: 2px solid black;
+  border-radius: 25px;
+  background-color: white;
+  width: 350px;
+  height: 50px;
+}
+
+.filter-dropdown {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+ font-size: 20px;
+ 
 }

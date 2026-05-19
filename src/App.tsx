@@ -41,6 +41,13 @@ function App() {
             placeholder="Ej: Bulbasaur" 
             icon={lupa} 
           />
+          <div className='container-filter'>
+            <div className="section-filter">
+              <div className="filter-dropdown">
+                <p>Generacions Pokemons</p>
+              </div>
+            </div>
+          </div>
         </section>
         
         <PokemonGrid pokemons={filtered} typeColors={typeColors} />
