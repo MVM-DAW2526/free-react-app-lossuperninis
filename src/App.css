@@ -174,74 +174,92 @@ body {
 
 .grass {
   background-color: #00A700;
+  border: 1px solid black
 }
 
 .fire {
   background-color: #ff7a1c;
+  border: 1px solid black
 }
 
 .water {
   background-color: #2a6aff;
+  border: 1px solid black
 }
 
 .electric {
   background-color: #ffd426;
+  border: 1px solid black
 }
 
 .psychic {
   background-color: #670e94;
+  border: 1px solid black
 }
 
 .ice {
   background-color: #98D8D8;
+  border: 1px solid black
 }
 
 .dragon {
   background-color: #7038F8;
+  border: 1px solid black
 }
 
 .dark {
   background-color: #33302f;
+  border: 1px solid black
 }
 
 .fairy {
   background-color: #e76a85;
+  border: 1px solid black
 }
 
 .normal {
   background-color: #b1b1b1;
+  border: 1px solid black
 }
 
 .fighting {
   background-color: #C03028;
+  border: 1px solid black
 }
 
 .flying {
   background-color: #A890F0;
+  border: 1px solid black
 }
 
 .poison {
   background-color: #A040A0;
+  border: 1px solid black
 }
 
 .ground {
   background-color: #d88b18;
+  border: 1px solid black;
 }
 
 .rock {
   background-color: #B8A038;
+  border: 1px solid black
 }
 
 .bug {
   background-color: #a6b806;
+  border: 1px solid black
 }
 
 .ghost {
   background-color: #705898;
+  border: 1px solid black
 }
 
 .steel {
   background-color: #8282af;
+  border: 1px solid black
 }
 
 .container-filter {
