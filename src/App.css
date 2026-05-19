@@ -1,8 +1,7 @@
 .encabezado {
   background-color: red;
   display: flex;
-  align-items: center;
-  justify-content: space-between;
+  justify-content: center;
   padding: 10px 20px;
 }
 
@@ -16,42 +15,29 @@ body {
   margin-left: 20px;
 }
 
+.titulo {
+  color: white;
+  background-color: red;
+  border: none;
+  font-size: 30px;
+  margin-right: auto;
+  cursor: pointer;
+}
+
 .boton-titulo {
   color: white;
   background-color: red;
   border: none;
   font-size: 30px;
-  margin-left: 20px;
+  margin-right: auto;
   cursor: pointer;
 }
 
-.titulo {
-  text-decoration: none;
-  color: white;
+.boton-titulo:hover {
+    transform: scale(1.15);
+    inline-size: auto;
 }
 
-.enlaces {
-  display: flex;
-  justify-content: center;
-  flex: 1;
-}
-
-.enlace {
-  text-decoration: none;
-  color: white;
-  font-size: 30px;
-  margin-left: -135px;
-  cursor: pointer;
-}
-
-
-.enlaces a:hover {
-    transform: scale(1.08);
-    border-bottom: 4px solid white;
-    padding-bottom: 5px;
-    transition: 0.2s;
-
-}
 .lista {
   list-style: none;
 }

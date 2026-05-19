@@ -34,7 +34,7 @@ function App() {
       <Header logo={pokeball} userIcon={icon} />
       <main>
         <section className="contenedor-main">
-          <h2>PokeWeb</h2>
+          <h2>Inicio</h2>
           <SearchBar 
             value={searchTerm} 
             onChange={setSearchTerm} 
