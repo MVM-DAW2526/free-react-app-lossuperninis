@@ -2,17 +2,18 @@
   background-color: red;
   display: flex;
   justify-content: center;
+  align-items: center;
   padding: 10px 20px;
+}
+
+.logo {
+  margin-right: 10px;
 }
 
 body {
     margin: 0;
     font-family: Arial, sans-serif;
     background-color: #efefef;
-}
-
-.logo {
-  margin-left: 20px;
 }
 
 .titulo {
@@ -24,8 +25,14 @@ body {
   cursor: pointer;
 }
 
-.boton-titulo {
+.enlace {
   color: white;
+  text-decoration: none;
+  text-decoration: underline;
+  color: white;
+}
+
+.titulo-centrado {
   background-color: red;
   border: none;
   font-size: 30px;
@@ -33,9 +40,10 @@ body {
   cursor: pointer;
 }
 
-.boton-titulo:hover {
-    transform: scale(1.15);
-    inline-size: auto;
+.titulo-centrado:hover {
+  transition: 0.3s;
+  transform: scale(1.15);
+
 }
 
 .lista {
