@@ -55,7 +55,7 @@ function App() {
           <div className='container-filter'>
             <div className="section-filter">
               <div className="filter-dropdown">
-                <p>Generacions Pokemons</p>
+                <p>Filtro: Tipos Pokemons</p>
                 <img className='flecha-desplegable' src="src/assets/10017905.png" alt="flecha desplegable" />
               </div>
             </div>
