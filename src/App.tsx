@@ -33,7 +33,7 @@ function App() {
     <div>
       <Header logo={pokeball} userIcon={icon} />
       <main>
-        <section className="contenedor-main">
+        <section className="contenedor-main"> 
           <h2>Inicio</h2>
           <SearchBar 
             value={searchTerm} 
@@ -45,6 +45,7 @@ function App() {
             <div className="section-filter">
               <div className="filter-dropdown">
                 <p>Generacions Pokemons</p>
+                <img className='flecha-desplegable' src="src/assets/10017905.png" alt="flecha desplegable" />
               </div>
             </div>
           </div>
