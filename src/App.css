@@ -109,8 +109,9 @@ body {
 }
 
 .pokedex-grid {
-    display: grid; 
-    grid-template-columns: repeat(5, 1fr);    
+    display: flex;
+    flex-wrap: wrap; 
+    justify-content: space-evenly;
     gap: 20px;
     padding: 20px;
     font-size: 20px;
@@ -134,10 +135,11 @@ body {
 
 .pokemon-card {
     border: 2px solid black;
+    width: 250px;
     border-radius: 10px;
     text-align: center;
     padding: 10px;
-    background-color: rgb(176, 163, 163);
+    background-color: rgb(176, 163, 163); 
 }
 
 .pokemon-card img {
