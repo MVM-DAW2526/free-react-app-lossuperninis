@@ -291,6 +291,10 @@ body {
   width: 30px;
 }
 
+.search-info {
+  display: flex;
+  justify-content: center;
+}
 
 #container-generations {
   margin-top: 20px;
@@ -304,73 +308,54 @@ body {
 }
 
 .buttonKanto {
-  width: 100px;
-  height: 25px;
   background-color: #FF0000;
-  border: 1px solid black;
-  border-radius: 25px;
 }
 
 .buttonJohto {
-  width: 100px;
-  height: 25px;
   background-color: #D4AF37;
-  border: 1px solid black;
-  border-radius: 25px;
 }
 
 .buttonHoenn {
-  width: 100px;
-  height: 25px;
   background-color: #50C878;
-  border: 1px solid black;
-  border-radius: 25px; 
 }
 
 .buttonSinnoh {
-  width: 100px;
-  height: 25px;
   background-color: #4A90E2;
-  border: 1px solid black;
-  border-radius: 25px;
 }
 
 .buttonUnova {
-  width: 100px;
-  height: 25px;
   background-color: #4A4A4A;
-  border: 1px solid black;
-  border-radius: 25px;
 }
 
 .buttonKalos {
-  width: 100px;
-  height: 25px;
   background-color: #0055A5;
-  border: 1px solid black;
-  border-radius: 25px;
 }
 
 .buttonAlola {
-  width: 100px;
-  height: 25px;
   background-color: #FF8C00;
-  border: 1px solid black;
-  border-radius: 25px;
 }
 
 .buttonGalar {
-  width: 100px;
-  height: 25px;
   background-color: #00A2E8;
-  border: 1px solid black;
-  border-radius: 25px;
 }
 
 .buttonPaldea {
+  background-color: #6A1B9A;
+}
+
+.buttonAll {
+  background-color: #ffffff;
+}
+
+.buttonGenerations {
   width: 100px;
   height: 25px;
-  background-color: #6A1B9A;
   border: 1px solid black;
   border-radius: 25px;
+  
+}
+
+.buttonGenerations:hover {
+  transition: all 0.3s ease-in-out; 
+  transform: scale(1.10);
 }

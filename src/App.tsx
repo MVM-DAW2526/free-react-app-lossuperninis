@@ -40,7 +40,7 @@ function App() {
       <Header logo={pokeball} userIcon={icon} />
       <main>
         <section className="contenedor-main"> 
-          <h2>Inicio</h2>
+          <p className='search-info'>Para buscar un pokemon escribe su nombre o su numero de pokedex.</p>
           <SearchBar 
             value={searchTerm} 
             onChange={setSearchTerm} 
@@ -48,15 +48,17 @@ function App() {
             icon={lupa} 
           />
           <div id="container-generations">
-            <button className="buttonKanto" onClick={() => changeGeneration(0, 151)}>Kanto</button>
-            <button className="buttonJohto" onClick={() => changeGeneration(151, 251)}>Johto</button>
-            <button className="buttonHoenn" onClick={() => changeGeneration(251, 386)}>Hoenn</button>
-            <button className="buttonSinnoh" onClick={() => changeGeneration(386, 493)}>Sinnoh</button>
-            <button className="buttonUnova" onClick={() => changeGeneration(493, 649)}>Unova</button>
-            <button className="buttonKalos" onClick={() => changeGeneration(649, 721)}>Kalos</button>
-            <button className="buttonAlola" onClick={() => changeGeneration(721, 809)}>Alola</button>
-            <button className="buttonGalar" onClick={() => changeGeneration(809, 905)}>Galar</button>
-            <button className="buttonPaldea" onClick={() => changeGeneration(905, 1025)}>Paldea</button>
+            <button className="buttonKanto buttonGenerations"  onClick={() => changeGeneration(0, 151)}>Kanto</button>
+            <button className="buttonJohto buttonGenerations"  onClick={() => changeGeneration(151, 251)}>Johto</button>
+            <button className="buttonHoenn buttonGenerations"  onClick={() => changeGeneration(251, 386)}>Hoenn</button>
+            <button className="buttonSinnoh buttonGenerations"  onClick={() => changeGeneration(386, 493)}>Sinnoh</button>
+            <button className="buttonUnova buttonGenerations"  onClick={() => changeGeneration(493, 649)}>Unova</button>
+            <button className="buttonKalos buttonGenerations"  onClick={() => changeGeneration(649, 721)}>Kalos</button>
+            <button className="buttonAlola buttonGenerations" onClick={() => changeGeneration(721, 809)}>Alola</button>
+            <button className="buttonGalar buttonGenerations" onClick={() => changeGeneration(809, 905)}>Galar</button>
+            <button className="buttonPaldea buttonGenerations" onClick={() => changeGeneration(905, 1025)}>Paldea</button>
+            <button className="buttonAll buttonGenerations" onClick={() => changeGeneration(0, 1025)}>Ver Todos</button>
+            
           </div>
           <div className='container-filter'>
             <div className="section-filter">
